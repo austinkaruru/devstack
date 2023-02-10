@@ -1,0 +1,117 @@
+.top-nav{
+    background-color: black;
+    float: right;
+    /* display: flex; */
+    /* overflow: hidden; */
+    justify-content: space-between;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.bottom-nav{
+    background-color: black;
+    float: right;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.bottom-nav .element{
+    width: 400px;
+    margin: 0 5px;
+}
+
+
+.top-nav a, .bottom-nav a{
+    top: 0;
+    float: right;
+    color: white;
+    /* text-align: center; */
+    padding: 14px 16px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.top-nav a+a{
+    border-right: 1px solid white;
+}
+
+.top-nav a:hover, .atldrop:hover .dropbtn{
+    background-color: #ed7105; 
+    color: white;
+}
+
+.top-nav a,.bottom-nav button{
+    transition: all 0.6s;
+}
+.bottom-nav button:hover{
+    background-color: #ed7105;
+    color: white;
+}
+
+.top-nav a.active{
+    background-color: white;
+    color: #ed7105;
+}
+
+.top-nav .atldrop{
+    float: left;
+    overflow: hidden;
+}
+
+.top-nav .atldrop .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.bottom-nav button{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+        /* padding: 14px 16px; */
+    background-color: inherit;
+}
+.bottom-nav button:hover .server-content{
+    display: block;
+}
+
+.server-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+.server-content a:hover{
+    background-color: #ddd;
+}
+.server-content{
+    display: block;
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.top-nav i{
+    margin-right: 10px;
+}
+
+.nav .bi bi-person-vcard{
+    color: white;
+}

@@ -1,0 +1,229 @@
+body{
+  background-color: #aba7a0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  /* border:1px solid white; */
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex; 
+}
+.backbox{  
+  background-color: #ed7105;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  transform: translate(0,-50%);
+  top:50%;
+  display: inline-flex;
+}
+
+.frontbox{
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  right:0;
+  margin-right: 2%;
+  margin-left: 5%;
+  transition: right .9s ease-in-out;
+}
+.frontbox .input-field{
+  width: 45%;
+  float: left;
+  margin-right: 5px;
+}
+
+.login .forget{
+  color: white;
+  background-color: black;
+  
+}
+
+.inline-hr{
+  display: inline-block;
+  margin: 0 15px;
+  width: 185px;
+}
+
+
+/* hr {
+  margin-left: 0;
+} */
+
+.moving{
+  right:45%;
+}
+
+.loginMsg, .signupMsg{
+  width: 50%;
+  height: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.loginMsg .title,
+.signupMsg .title{
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.loginMsg p,
+.signupMsg p {
+  font-weight: 100;
+}
+
+.textcontent{
+  color:white;
+  margin-top:65px;
+  margin-left: 12%;
+}
+
+.loginMsg button,
+.signupMsg button {
+  background-color: white;
+  border: 2px solid #ed7105;
+  border-radius: 10px;
+  color:#ed7105;
+  font-size: 12px;
+  box-sizing: content-box;
+  font-weight: 300;
+  padding:10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* front box content*/
+.login, .signup{
+  padding: 20px;
+  text-align: center;
+}
+
+.login h2,
+.signup h2 {
+  color: #081307;
+  font-size:22px;
+}
+
+.inputbox{
+  margin-top:30px; 
+}
+
+
+.login input, 
+.signup input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom:20px;
+  font-size: 12px;
+}
+
+.login button,
+.signup button{
+  background-color: #ed7105;
+  border: none;
+  color:white;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 10px;
+  width: 60px;
+  /* position: absolute;
+  right:30px;
+  bottom: 30px; */
+  cursor: pointer;
+}
+.button-sign{
+  padding-bottom: 20px;
+}
+.signup .google-sign-in{
+  float: left;
+  width: 180px;
+  background-color: #dd4b39;
+  color: white;
+  box-sizing: content-box;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top:10px;
+}
+.login .google-sign-in{
+  float: left;
+  width: 180px;
+  background-color: #dd4b39;
+  color: white;
+  box-sizing: content-box;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top:10px;
+}
+.login .microsoft-sign-in{
+  float: right;
+  width: 180px;
+  background-color: #0078D7;
+  color: white;
+  box-sizing: content-box;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top:10px;
+}
+.signup .microsoft-sign-in{
+  float: right;
+  width: 180px;
+  background-color: #0078D7;
+  color: white;
+  box-sizing: content-box;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top:10px;
+}
+
+/* .signup .microsoft-sign-in .fa fa-windows {
+  color: white;
+    font-size: 24px;
+    float:left;
+    margin: 0 10px;
+} */
+
+.signup .other-signin{
+  margin: 15 15px;
+  padding-top: 20px;
+}
+.login .other-signin{
+  margin: 15 15px;
+  padding-top: 20px;
+}
+
+/* Fade In & Out*/
+.login p {
+  cursor: pointer;
+  color:#404040;
+  font-size:15px;
+}
+
+.loginMsg, .signupMsg{
+  /*opacity: 1;*/
+  transition: opacity .8s ease-in-out;
+}
+
+.visibility{
+  opacity: 0;
+}
+
+.hide{
+  display: none;
+}

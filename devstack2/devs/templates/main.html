@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="{% static 'global.css'%}">
+  <link rel="shortcut icon" href="#">
+  </head>
+<body>
+  <script>0</script>
+  <div class="container">
+    <!--Start of backbox-->
+    <div class="backbox">
+      <div class="loginMsg">
+        <div class="textcontent">
+          <p class="title">Don't have an account?</p>
+          <p>Sign up right here!</p>
+          <button id="switch1">Sign Up</button>
+        </div>
+      </div>
+      <div class="signupMsg visibility">
+        <div class="textcontent">
+          <p class="title">Already have an account?</p>
+          <button id="switch2">Log In</button>
+        </div>
+      </div>
+    </div>
+    <!-- backbox -->
+    
+    <div class="frontbox">
+      
+      <div class="login">
+        <h2>Log In</h2>
+        <div class="inputbox">
+          <input type="text" name="email" placeholder="  EMAIL">
+          <input type="password" name="password" placeholder="  PASSWORD">
+        </div> 
+        <form method="post" autocomplete="on" action="{% url 'devs:dashboard' %}">
+          {% csrf_token %}
+        <button>Log In</button>
+        </form>
+        <div style="display: grid; grid-template-columns: 4fr 4fr; grid-gap:200px">
+          <form method="post" autocomplete="on" action="{% url 'devs:findaccount' %}">
+            {% csrf_token %}
+          <div>
+            <button class="forget">Forget Password?</button>
+          </div>
+          </form>
+        
+        <div><p></p></div>
+        </div>
+        <hr class="inline-hr">
+          or
+          <hr class="inline-hr">
+          <div class="other-signin">
+            <div id="googleicon">
+            
+            <button class="google-sign-in">Join with Google</button>
+            <i class="fa fa-google" aria-hidden="true"></i>
+            </div>
+            <div id="officeicon">
+            
+            <button class="microsoft-sign-in">Join with Office</button>
+            <i class="fa fa-windows" aria-hidden="true"></i>
+          </div>
+            </div>
+      </div>
+
+      <div class="signup hide">
+        <form method="post" autocomplete="on" action="{% url 'devs:verify' %}">
+          {% csrf_token %}
+        <h2>Sign up for Servanah</h2>
+        <div class="inputbox">
+            <input class="input-field" type="text" name="firstname" placeholder="First name">
+            <input class="input-field" type="text" name="lastname" placeholder="Last name" style="float: right;">
+          <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="button-sign">
+          <!-- <a href="verify"> -->
+          <button>Sign Up</button>
+            <!-- </a> -->
+          
+        </div>
+        
+          <hr class="inline-hr">
+          or
+          <hr class="inline-hr">
+          <div class="other-signin">
+            <div id="googleicon">
+            
+            <button class="google-sign-in">Join with Google</button>
+            <i class="fa fa-google" aria-hidden="true"></i>
+            </div>
+            <div id="officeicon">
+            
+            <button class="microsoft-sign-in">Join with Office</button>
+            <i class="fa fa-windows" aria-hidden="true"></i>
+          </div>
+            </div>
+          </form>
+          </div>
+          
+          
+        
+        </div>
+
+    </div>
+  </form>
+    <!-- frontbox -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" 
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" 
+  crossorigin="anonymous"></script>
+  <script src="{% static 'global.js' %}"></script>
+</body>
+</html>

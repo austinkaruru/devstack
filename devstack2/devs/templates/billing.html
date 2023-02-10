@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'billing.css' %}">
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="billing-box">
+                <form method="post" autocomplete="on" action="{% url 'devs:main' %}">
+                    {% csrf_token %}
+                <h2>Billing Information</h2>
+                <div class ="billing-field">
+                    <input type="int" name="cardnumber" placeholder="Card Number">
+                    <input type="date" name="expirydate" placeholder="Expiry Date">
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center; height:20px">
+                    <hr class="inline-hr">
+                    or
+                    <hr class="inline-hr">
+                    </div>
+                    <p style="text-align: center">Pay with M-Pesa</p>
+                    <div class="phone">
+                    <input type="tel" name="phonenumber" placeholder="Phone Number">
+                    </div>
+                    <div class="button-submit">
+                    <a href="main">
+                    <button>SUBMIT</button>
+                    </a>
+                    </div>
+                
+                </form>
+            </div>
+            
+        </div>
+    </body>
+</html>

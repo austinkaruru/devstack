@@ -1,0 +1,148 @@
+
+.image-nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 90%;
+    padding-right: 130px;
+    /*   */
+    margin-left: 50px;
+    
+}
+.image-nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 200px;
+    
+    padding: 3px;
+}
+
+.image-nav a+a{
+    border-left: 1px solid white;
+    
+}
+nav{
+    /* border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    height: 308px;
+    width: 275px;
+    display: flex;
+    /* margin-left: 50px; */
+    padding-right: 10px;
+    
+}
+nav a{
+    text-decoration: none;
+    /* flex: 5; */
+    text-align: center;
+    
+    /* min-width: 600px; */
+    padding: 50px;
+}
+
+nav button{
+    text-align: center;
+    padding: 50px;
+    margin-left: 0;
+}
+nav a:hover{
+    background-color: blue;
+    color: white;
+    width: 346px;
+    
+}
+
+
+nav ul{
+    display: initial;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* width: 50%;    */
+    text-align: center;
+    /* transition: height 0.1s; */
+
+}
+
+nav li a{
+    /* border: 1px solid black; */
+    display: flex;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 346px;
+    margin-right: 5px;;
+    /* float: left; */
+    /* padding-left: 10px; */
+    transition: all 0.6s;
+
+    /* font-size: 15px; */
+}
+
+nav ul ul{
+    list-style-type: none;
+    position: absolute;
+    /* left: 337px; */
+    top: 0px;
+    left: 285px;
+    width: 500px;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black; */
+    height: 300px;
+    display: none;
+    margin-left: 50px;
+    
+}
+nav ul ul a:hover{
+    width: 412px;
+}
+nav ul ul a{
+    width:412px;
+    margin-left:10px;
+}
+
+nav ul ul li i{
+    position: absolute;
+    right: 100px;
+}
+nav ul ul ul{
+    display: none;
+    border: none;
+    left: 300px;
+
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    position: absolute;
+    width: 279px;
+    margin-left: 210px;
+    height: 300px;
+}
+nav ul ul ul a{
+    width: 410px;
+}
+nav ul ul ul a:hover{
+    width: 410px;
+}
+
+nav ul .drop-side{
+    position: relative;
+
+}
+
+nav ul .drop-side:hover > ul{
+    display: initial;
+}
+
+nav ul .drop-side2 ul{
+    /* display: initial; */
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+nav ul .drop-side2:hover ul{
+    display: initial;
+}

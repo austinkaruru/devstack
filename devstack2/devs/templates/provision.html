@@ -1,0 +1,290 @@
+{% extends "master.html" %}
+
+{% block title %}
+ VM Provision
+{% endblock %}
+
+{% block content %}
+        <div class="container">
+            <div class="server-container">
+            <h1 class="server-left">Create Server</h1>
+            <p class="server-right"><b>$1.0752</b>/day 
+                <i class="bi bi-clock"></i>
+            </p>
+            
+            </div>
+            <hr class="inline">
+            <div class="server-container2">
+            <h2 class="server-left">Server Details</h2>
+            <h3 class="server-right"></h3>
+            </div>
+            <div class="field-container">
+                <ul style="list-style-type: none;">
+                <li>
+                    <div style="display: inline-block; padding-bottom: 30px">
+                    <label for="sname">Server Name</label>
+                    <input type="text" name="sname" placeholder=" Server-01">
+                    <i class="bi bi-question-circle-fill"></i>
+                    </div>
+                    </li>
+                    <li>
+                    <div style="display: inline-block; padding-left: 35px;">
+                    <label style="padding-left: 12px;"for="sregion">Region</label>
+                    <select>
+                        <option value="nairobi"> Nairobi(NBI)</option>
+                        <option value="mombasa">Mombasa(MSA)</option>
+                    </select>
+                    <i class="bi bi-question-circle-fill"></i>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="server-container3">
+                <div class="trade-server" style="display: inline-flex">
+                <h5 style="margin-left: 50px">Virtual Server</h5>
+                <h5 style="margin-left: 30px">OnMetal&trade; Server</h5>
+                </div>
+                <hr style="margin-top: 0; width: 100%; margin-left:30px">
+            </div>
+            <div class="server-container4">
+                <h3 style="margin-left: 4%;">Image</h3>
+                <label class="checkbox" style="margin-left: 750px">
+                <input type="checkbox"> Show most popular images only
+                </label>
+                </div>
+                <div class="image-nav">
+                    
+                <a href="#">Image Type</a>
+                <a href="#os">Operating System
+                        <i class="bi bi-caret-up-fill"></i>
+                    </a>
+                <a href="#version">Version
+                        <i class="bi bi-caret-down-fill"></i>
+                    </a>
+            
+                </div>
+                <div class="side-nav">
+                    <nav>
+                    <ul style="list-style-type: none; ">
+                    <li class="drop-side"><a href="#linux"><i class="bi bi-ubuntu" style="margin-right:10px;"></i>Linux/Appliances<i class="bi bi-caret-right-fill" style="position: absolute; right: 15px;"></i></a>
+                         <ul class="nav2">
+                         <li><a href="#almalinux"><img src="/static/almalinux.png"alt="almalinux" style="width:30px; height:30px; margin-right:10px;">Almalinux<i class="bi bi-caret-right-fill"></i></a></li>
+                         <li><a href="#centos"><img src="/static/centos.png"alt="centos" style="width:30px; height:30px; margin-right:10px;">CentOs<i class="bi bi-caret-right-fill"></i></a></li>
+                         <li><a href="#debian"><img src="/static/debian2.png"alt="debian" style="width:30px; height:30px; margin-right:10px;">Debian<i class="bi bi-caret-right-fill"></i></a></li>
+                         <li><a href="#fedora"><img src="/static/fedora2.png"alt="fedora" style="width:30px; height:30px; margin-right:10px;">Fedora<i class="bi bi-caret-right-fill"></i></a></li>
+                         <li><a href="#fortinet"><img src="/static/fortinet.png"alt="fortinet" style="width:30px; height:30px; margin-right:10px;">Fortinet<i class="bi bi-caret-right-fill"></i></a></li>
+                         <li><a href="#rockylinux"><img src="/static/rockylinux.png"alt="rockylinux" style="width:30px; height:30px; margin-right:10px;">Rocky Linux<i class="bi bi-caret-right-fill"></i></a></li>
+                         <li class="drop-side2"><a href="#ubuntu"><img src="/static/ubuntu.png"alt="ubuntu" style="width:30px; height:30px; margin-right:10px;">Ubuntu<i class="bi bi-caret-right-fill"></i></a>
+                            <ul class="nav3">
+                                <li><a href="#jellyfish">22.04 LTS(Jammy Jellyfish)(Cloud)</a></li>
+                                <li><a href="#fossa">20.04 LTS(Focal Fossa)(Cloud)</a></li>
+                                <li><a href="#beaver">18.04 LTS(Bionic Beaver)(Cloud)</a></li>
+                            </ul>
+                        </li>
+                         </ul>
+                        </li>  
+                    <li><a href="#windows"><i class="bi bi-windows" style="margin-right:10px; color:aqua"></i>Windows <i class="bi bi-caret-right-fill" style="position: absolute; right: 15px;"></i></a></li>
+                    <li><a href="#saved"><i class="bi bi-cloud-download-fill "style="margin-right:10px; "></i>Saved <i class="bi bi-caret-right-fill" style="position: absolute; right: 15px;"></i></a></li>
+                    </ul>
+                    </nav>
+                </div>
+
+            <div class="flavor-container">
+                <div style="display: inline-flex;">
+                <h3>Flavor <span style="margin-left:30px; margin-right:5px">&#46;</span></h3>
+                <p style="margin-left: 10px; margin-top: 10px;"><a href="#">Comparison Chart</a></p>
+                </div>
+                <table>
+                    <tr class="heading">
+                        <th style="width:25%;">Flavor Class</th>
+                        <th style="width:25%;">Flavor</th>
+                        <th style="width:50%;">Description</th>
+                    </tr>
+                    <tr style="border-left: 1px solid black;">
+                        <td class="heading1" style="padding-right: 140px; border-right: 1px solid black;"><a href="#general">General Purpose</a></td>
+                        <td rowspan="6" style="border-right: 1px solid black; border-bottom: 1px solid black;"><input type="range" min="0" max="100" value="50"></td>
+                        <td rowspan="6" style="border-right: 1px solid black; border-bottom: 1px solid black;"><h3>1 GB General Purpose v1</h3>
+                        <p>Great for web servers, batch processing, network appliances, small databases, 
+                        and most general purpose computing workloads. Storage is high-performance, RAID 10-protected SSD</p>
+                        <hr class="inline-hr">
+                            <table>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>1 vCPU</td>
+                                    <td rowspan="9"><img src="/static/chart.png"alt="Chart"></td>
+                                </tr>
+                                <tr>
+                                    <td>RAM</td>
+                                    <td>1 GB</td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Boot Source</td>
+                                    <td>Local</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>System Disk</td>
+                                    <td>20 GB</td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Network</td>
+                                    <td>200 Mb/s</td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Disk I/O</td>
+                                    <td>Better</td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>Price <i class="bi bi-clock"></i></td>
+                                    <td>$0.0391/hr Server</td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td>$0.0057/hr service <hr class="inline-hr" style="width:150px; margin-left:5px;"></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td>$0.0448/hr total</td>
+                                    <td> </td>
+                                </tr>
+                            </table>                      
+                        </td>
+                    </tr>
+                    <tr style="border-left: 1px solid black;">
+                        <td class="heading1" style="border-right: 1px solid black;"><a href="#compute">Compute</a></td>
+                        <!-- <td style="border: 1px solid green;"> </td> -->
+                        <td>
+                            <!-- <hr class="inline-hr"> -->
+                         </td>
+                            
+                    </tr>
+                    <tr style="border-left: 1px solid black;">
+                        <td class="heading1" style="border-right: 1px solid black;"><a href="#memory">Memory</a></td>
+                        <!-- <td  style="border: 1px solid green;"> </td> -->
+                        <td> </td>
+                    </tr>
+                    <tr style="border-left: 1px solid black;">
+                        <td class="heading1" style="border-right: 1px solid black;"><a href="#io">I/O</a></td>
+                        <!-- <td  style="border: 1px solid green;"> </td> -->
+                        <td> </td>
+                    </tr>
+                    <tr style="border-left: 1px solid black;">
+                        <td class="heading1" style="border-right: 1px solid black;"><a href="#standard">Standard</a></td>
+                        <!-- <td  style="border: 1px solid green;"> </td> -->
+                        <td> </td>
+                    </tr>
+                    <tr style="border-left: 1px solid black;">
+                        <td class="heading1" style="border-right: 1px solid black; border-bottom: 1px solid black;"><a href="#standard"></a></td>
+                        <!-- <td  style="border: 1px solid green;"> </td> -->
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td class="heading1"><a href="#standard"></a></td>
+                        <!-- <td  style="border: 1px solid green;"> </td> -->
+                        <td> </td>
+                    </tr>
+                </table>
+            </div>
+                <div class="options-class" style="display:flex; align-items:center;">
+                    <div style="width:180px; font-size:22px;">Advanced Options</div>
+                    <div>2 Networks</div>
+                </div>
+
+                <div class="options-class2">
+                    <ul style="list-style-type: none; border-bottom: 1px solid black;">
+                        <li>
+                    <div style="display: inline-block; padding-bottom: 30px">
+                        <label for="sshkey" style="margin-left: 60px; padding-right:30px;">SSH Key</label>
+                        <input type="text" name="sname" placeholder="None">
+                        <i class="bi bi-question-circle-fill"></i>
+                        <a href="#publickey">Add Public Key...</a>
+                        </div>
+                        </li>
+                        <li>
+                        <div style="display: inline-block; padding-bottom: 30px">
+                        <label for="#networks" style="margin-left: 60px; padding-right:30px;">Networks</label>
+                        <label for="#net">PublicNet, ServiceNet</label>
+                            
+                        <a style="margin-left: 20px; padding-right:30px;" href="#select">Select Networks...</a>
+                        </div>
+                        </li>
+                        <li>
+                        <div style="display: inline-block; padding-bottom: 10px">
+                        <label for="#networks" style="margin-left: 0; padding-right:30px;">Disk Configuration</label>
+                        <label for="#manual">Manual<i style="padding-left:10px;" class="bi bi-question-circle-fill"></i></label>
+                        </div>
+                        </li>
+                        <li>
+                        <div style="display: inline-block; padding-bottom: 10px">
+                        <label for="#networks" style="margin-left: 0; padding-right:157px;"> </label>
+                        <label for="#manual">Faster build times but requires manual partitioning</label>
+                        </div>
+                        </li>
+                        <li>
+                            <div style="display: inline-block; padding-bottom: 10px">
+                            <label for="#networks" style="margin-left: 0; padding-right:157px;"> </label>
+                            <label for="#manual">Automatic<i style="padding-left:10px;" class="bi bi-question-circle-fill"></i></label>
+                            </div>
+                            </li>
+                            <li>
+                                <div style="display: inline-block; padding-bottom: 30px">
+                                <label for="#networks" style="margin-left: 0; padding-right:157px;"> </label>
+                                <label for="#manual">Entire disk is single partition and automatically resizes</label>
+                                </div>
+                                </li>
+                    </ul>
+                </div>
+                <div class="recommend-container" style="">
+                    <h2>Recommended Installs</h2>
+                    <p>The following options are recommended by Rackspace Fanatical Support Specialists. All checked options will be automatically
+                         installed and configured</p>
+                         <ul style="list-style-type: none; padding-left:0;">
+                            <li>
+                    <label class="checkbox" >
+                        <input type="checkbox">Monitor recommended server<span style="padding-left: 50px; margin-right:615px;">metrics</span style="pleft: 90px;">Free<span></span>
+                    </label>
+                    </li>
+                    <li>
+                    <label class="checkbox">
+                        <input type="checkbox">Operating System<span style="padding-left:40px;">security patches</span><span style="padding-left: 30px;">applied on selected images</span><span style="margin-left: 443px;">Free</span>
+                    </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox">Protect your data with weekly<span style="padding-left: 50px; margin-right:390px;">Cloud Backups</span><span>Starts at $0.4287 / day<i style="margin-left:20px;"class="bi bi-clock"></i></span>
+                        </label>
+                    </li>
+                    <li>
+                        <p><i class="bi bi-exclamation-triangle"></i>Without <a href="#">Cloud Backup</a> your data will not be backed up to help prevent data and configuration loss</p>
+                    </li>
+                         </ul>
+                </div>
+
+                <div class="recommend-container2">
+                    <h2>Itemized Charges</h2>
+                    <ul style="list-style-type: none; padding-left:0; ">
+                    <li><p>Ubuntu 22.04 LTS (Jammy Jellyfish) (Cloud) | 1 GB General Purpose v1<span style="padding-left: 400px;">$0.9384 / day</span></p></li>
+                    <li><p>Service Fee<span style="padding-left: 792px;">$0.1368 / day</span></p></li>
+                    <li><p>Operating system security patches<span style="padding-left: 677px;">Included</span></p></li>
+                    <li><p>Monthly minimums apply</p></li>
+                    </ul>
+                </div>
+                <hr class="inline-hr">
+                <div class="sbutton-container">
+                    <div class="sbutton">
+                    <button style="background-color: blue; color:white; border: none;">Create Server</button>
+                    <button style="color: blue; border:1px solid blue;">Cancel</button>
+                    
+                <label class="tbutton">Total $1.0752/day<i style="padding-left:10px;"class="bi bi-clock"></i></label>
+                </div>
+                </div>
+                
+        </div>
+        
+{% endblock %}

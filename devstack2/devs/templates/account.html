@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'account.css' %}">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="account-box">
+                <form method="post" autocomplete="on" action="{%url 'devs:billing' %}">
+                    {% csrf_token %}
+                <h2>Account Setup</h2>
+                <div class="account-field">
+                    <input  type="tel" name="phonenumber" placeholder="Phone Number" style="margin-right: 4%;">
+                    <input  type="text" name="accounttype" placeholder="Account Type (Personal/Organization)" style="margin-right: 4%;"  >
+                    <input  type="select" name="country" placeholder="Country" style="margin-right: 4%;" >
+                    <input  type="text" name="city/county" placeholder="City/ County" style="margin-right: 4%;" >
+                    <input  type="text" name="address" placeholder="Address" style="margin-right: 4%;" >
+                    <input  type="int" name="postalcode" placeholder="Postal Code">
+                </div>
+                <div style="display: inline-flex; align-items: center;">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    I have read and understood the <a href="">Terms and Conditions</a>
+                </label>
+            </div>
+                <!-- <a href="billing"> -->
+                    <button>Next</button>
+                </a>
+                  <p> Have an account already? <a href="">Log In</a></p>
+                  </form>   
+            </div>
+        </div>
+    </body>
+    </html>

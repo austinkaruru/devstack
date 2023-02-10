@@ -1,0 +1,85 @@
+body {
+    background-color: #ed7105;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 800px;
+    height: 615px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billing-box{
+    background-color: #aba7a0;
+    border-radius: 20px;
+    height: 80%;
+    width: 75%;
+}
+
+.billing-box h2{
+    color: white;
+    font-size:26px;
+    padding:20px;
+    text-align: center;
+}
+
+.billing-box input{
+    width: 45%;
+    height: 40px;
+    background-color: #f2f2f2;
+    border: none;
+    padding-top: 10px;
+    margin-bottom:20px;
+    font-size: 12px;
+    margin: 5 5px;
+    border-radius: 7px;
+    margin-right: 4%;
+}
+
+.billing-field{
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.inline-hr{
+    display: inline-block;
+    margin: 0 15px;
+    width: 40%;
+  }
+
+.phone{
+    width: 1150px;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom: 10px;;
+    font-size: 15px;
+    font-weight: 300;
+    /* box-sizing: content-box; */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.button-submit button{
+    background-color: rgb(47, 62, 197);
+    border: none; 
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    box-sizing: content-box;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+    cursor: pointer;
+}

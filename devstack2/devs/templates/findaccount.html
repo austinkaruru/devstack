@@ -1,0 +1,27 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'password.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="find-box">
+                <form method="post" autocomplete="on" action="{% url 'devs:newverify' %}">
+                    {% csrf_token %}
+                    <div class="newpass">
+                        <h2>Let's find your account</h2>
+                        <p>Insert your email</p>
+                        <div class="password-field">
+                            <input type="text" name="email" placeholder=" Email">
+                        </div>
+                        <a href="verify">
+                            <button>Search</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
